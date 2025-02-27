@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mart - Checkout</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=your-paypal-client-id&currency=USD"></script>
+</head>
+<body style="background-image: url('img/checkout.jpg'); background-size: cover; background-position: center;height: 500px;">
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="E-Mart Logo">
+            <h1>E-Mart</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="category.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout">
+            <h1>Payment Modes</h1>
+            <form id="payment-form">
+                <div id="payment-methods">
+                    <div>
+                        <input type="radio" id="stripe" name="payment-method" value="stripe" checked>
+                        <label for="stripe">Credit/Debit Card (Stripe)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="phone_pay" name="payment-method" value="phone_pay">
+                        <label for="paypal">Phone pay</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="google-pay" name="payment-method" value="google-pay">
+                        <label for="google-pay">Google Pay</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="apple-pay" name="payment-method" value="apple-pay">
+                        <label for="apple-pay">Apple Pay</label>
+                    </div>
+                </div>
+                    <button id="submit">Pay</button>
+                </div>
+                <div id="phone_pay-button-container" class="hidden"></div>
+                <div id="google-pay-button-container" class="hidden"></div>
+                <div id="apple-pay-button-container" class="hidden"></div>
+                <p id="error-message" class="hidden"></p>
+                <p id="success-message" class="hidden"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Mart. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

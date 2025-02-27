@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mart - Products</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-image: url('img/category1.jpg'); background-size: cover; background-repeat:repeat-y; background-position:center ;height: 700px;">
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="E-Mart Logo">
+            <h1>E-Mart</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="category.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="category">
+            <h2>Our Products</h2>
+            <div class="category-selector">
+                <label for="category">Select Category:</label>
+                <select id="category">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="mobile-phones">Mobile Phones</option>
+                    <option value="laptops">Laptops</option>
+                    <option value="cameras">Cameras</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="mens-clothing">Men's Clothing</option>
+                    <option value="womens-clothing">Women's Clothing</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="home-kitchen">Home & Kitchen</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="toys-games">Toys & Games</option>
+                    <option value="printers-ink">Printers & Ink</option>
+                </select>
+            </div>
+            <div class="product-list" id="product-list">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Mart. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
